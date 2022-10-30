@@ -1,81 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;500;600&display=swap');
+
+
 *{
     margin: 0;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trispace', sans-serif;
 }
 
 
 
 body{
-    background-color: #222428;
+    background-color: #20212b;
     width: auto;
     height: auto;
     max-width: 100%;
 }
 
 .navbar{
-    background-color: #282B30;
+    background-color: #21232d;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 5px 12px;
+    padding: 0px 12px;
+    border-bottom: 1px solid black;
+    border-color: linear-gradient(270deg, #fbad81, #e8fb81, #81fb96, #81dffb, #a981fb, #fb81cb, #fb8181);;
 }
 
 .navbar li{
     display:flex;
     list-style: none;
 }
+@keyframes animateBg {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
 
 .logo{
     text-decoration: none;
-    font-size: 20px;
-}
-
-.nav-item{
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
+    font-size: 28px;
     padding: 10px 15px;
-    transition: background-color 0.65s;
+    background: linear-gradient(270deg, #fbad81, #e8fb81, #81fb96, #81dffb, #a981fb, #fb81cb, #fb8181);
+    background-size: 1400% 1400%;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: titlegradient 20s ease infinite;
+}
+@keyframes titlegradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
-.nav-item:hover{
-    background-color: #7063d1;
-}
-
-.welcome{
-    width: 100%;
-    height: 500px;
-    background-color: #1f2125;
+.soon{
+    width:calc(100% - 40px);
     display: flex;
-    align-items: center;
+    padding: 20px;
     justify-content: center;
-    flex-direction: column;
-}
-
-.welcome h1{
-    font-size: 64px;
-    font-weight: 500;
-    padding:4px;
-}
-
-.welcome h2{
-    font-size: 24px;
-    font-weight: 500;
-    padding:4px;
-}
-.projects{
-    width: calc(100% - 50px);
-    max-width: 100%;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.projects h1{
-    font-size: 36px;
-    font-weight: 500;
-    padding:8px;
+    text-align: center;
 }
