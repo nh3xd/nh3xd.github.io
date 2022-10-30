@@ -23,13 +23,13 @@ body{
     align-items: center;
     padding: 0px 12px;
     border-bottom: 1px solid black;
-    border-color: linear-gradient(270deg, #fbad81, #e8fb81, #81fb96, #81dffb, #a981fb, #fb81cb, #fb8181);;
 }
 
 .navbar li{
     display:flex;
     list-style: none;
 }
+
 @keyframes animateBg {
     0% {
       background-position: 0 0;
